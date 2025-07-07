@@ -6,6 +6,7 @@ import os
 import re
 from pathlib import Path
 
+from NodeGraphQt.base import node
 from Qt import QtCore, QtWidgets
 
 from NodeGraphQt.base.commands import (NodeAddedCmd,
@@ -1393,6 +1394,9 @@ class NodeGraph(QtCore.QObject):
         """
         assert isinstance(node, NodeObject), \
             'node must be a instance of a NodeObject.'
+        
+        if hasattr(node, '_del_node'):
+            node._del_node()
         node_id = node.id
         if push_undo:
             self._undo_stack.beginMacro('delete node: "{}"'.format(node.name()))
