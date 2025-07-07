@@ -17,11 +17,25 @@ NodeGraphQt is a node graph UI framework written in python using `Qt`.
 
 ## Install
 
+**❇️Update：**
+
+- 2025-7-7:
+  
+```shell
+git clone https://github.com/laoxue888/NodeGraphQt.git
+cd NodeGraphQt
+pip install -e .
+```
+
 NodeGraphQt is available on The Python Package Index (PyPI) [here](https://pypi.org/project/NodeGraphQt) so it can be installed with:
 ```
 pip install NodeGraphQt
 ```
 or you can download previous versions from the [releases](https://github.com/jchanvfx/NodeGraphQt/releases) page.
+
+
+
+
 
 
 ## Documentation
